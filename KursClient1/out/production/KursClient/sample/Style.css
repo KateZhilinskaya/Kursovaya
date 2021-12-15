@@ -1,0 +1,31 @@
+.root{
+    -fx-background-color: #30D5C8;
+}
+
+#errorLabel {
+   	-fx-text-fill: red;
+   	-fx-font-size: 16px;
+   	-fx-font-weight: bold;
+}
+
+#fieldLogin, #fieldPassword, #repeatPassword{
+   	-fx-font-size: 14px;
+}
+
+.button{
+	-fx-font-size: 13px;
+}
+
+.label-font-size{
+	-fx-font-size: 14px;
+}
+
+.sum-deposit-value{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-color: #00B7AB;
+	-fx-font-size: 14px;
+}
+
+.table-column-view {
+  -fx-alignment: CENTER;
+}

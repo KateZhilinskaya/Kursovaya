@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="338.0" prefWidth="580.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.HistoryLoanController">
+   <children>
+      <TableView fx:id="dataTable" layoutX="35.0" layoutY="28.0" prefHeight="282.0" prefWidth="513.0">
+        <columns>
+          <TableColumn fx:id="depositColumn" prefWidth="129.5999984741211" text="Кредит" />
+          <TableColumn fx:id="sumColumn" prefWidth="81.4000244140625" styleClass="table-column-view" text="Сумма" />
+            <TableColumn fx:id="percentColumn" prefWidth="75.39996337890625" styleClass="table-column-view" text="Процент(%)" />
+            <TableColumn fx:id="termColumn" prefWidth="75.20001220703125" styleClass="table-column-view" text="Месяцы" />
+            <TableColumn fx:id="dateColumn" prefWidth="132.79995727539062" styleClass="table-column-view" text="Дата" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="373.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MoneyTransferController">
+   <children>
+      <Label layoutX="33.0" layoutY="62.0" styleClass="label-font-size" text="Номер счёта:" />
+      <Label layoutX="33.0" layoutY="106.0" styleClass="label-font-size" text="Сумма (мин: 5$):" />
+      <TextField fx:id="fieldNumberAccount" layoutX="146.0" layoutY="55.0" prefHeight="30.0" prefWidth="200.0" styleClass="label-font-size" />
+      <TextField fx:id="fieldSum" layoutX="146.0" layoutY="99.0" prefHeight="30.0" prefWidth="200.0" styleClass="label-font-size" />
+      <Button layoutX="146.0" layoutY="171.0" mnemonicParsing="false" onAction="#transferMoneyAction" styleClass="label-font-size" text="Перевести" />
+      <CheckBox fx:id="checkSaveReport" layoutX="100.0" layoutY="216.0" mnemonicParsing="false" styleClass="label-font-size" text="Сохранить отчет в файл">
+         <font>
+            <Font size="13.0" />
+         </font></CheckBox>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutY="140.0" prefHeight="17.0" prefWidth="373.0" styleClass="label-font-size" />
+   </children>
+</AnchorPane>

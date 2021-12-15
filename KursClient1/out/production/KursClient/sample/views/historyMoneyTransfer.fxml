@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="370.0" prefWidth="497.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.HistoryMoneyTransferController">
+   <children>
+      <Label layoutX="22.0" layoutY="329.0" text="Поиск по номеру счёта:" />
+      <TableView fx:id="dataTable" layoutX="23.0" layoutY="20.0" prefHeight="283.0" prefWidth="453.0">
+        <columns>
+          <TableColumn fx:id="accountNumColumn" prefWidth="204.79999351501465" text="Номер счёта" />
+          <TableColumn fx:id="sumColumn" prefWidth="91.40000915527344" styleClass="table-column-view" text="Сумма" />
+            <TableColumn fx:id="dateColumn" minWidth="6.4000244140625" prefWidth="139.4000244140625" styleClass="table-column-view" text="Дата" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchField" layoutX="162.0" layoutY="325.0" promptText="Введите номер счета" />
+      <Button fx:id="btnSearch" layoutX="322.0" layoutY="323.0" mnemonicParsing="false" onAction="#searchAction" text="Поиск" />
+      <Button fx:id="showAll" layoutX="389.0" layoutY="323.0" mnemonicParsing="false" onAction="#showAllAction" text="Показать все" />
+   </children>
+</AnchorPane>

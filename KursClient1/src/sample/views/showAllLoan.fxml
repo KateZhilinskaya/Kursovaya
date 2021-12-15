@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="754.0" prefWidth="702.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ShowAllLoanController">
+    <children>
+        <TableView fx:id="dataTable" layoutX="35.0" layoutY="28.0" prefHeight="282.0" prefWidth="634.0">
+            <columns>
+                <TableColumn fx:id="depositColumn" prefWidth="129.5999984741211" text="Кредит" />
+                <TableColumn fx:id="nameColumn" prefWidth="87.60003662109375" styleClass="table-column-view" text="Имя" />
+                <TableColumn fx:id="sumColumn" prefWidth="75.99998474121094" styleClass="table-column-view" text="Сумма" />
+                <TableColumn fx:id="percentColumn" prefWidth="76.0" styleClass="table-column-view" text="Процент(%)" />
+                <TableColumn fx:id="termColumn" prefWidth="58.0" styleClass="table-column-view" text="Месяцы" />
+                <TableColumn fx:id="dateColumn" prefWidth="188.19998168945312" styleClass="table-column-view" text="Дата" />
+            </columns>
+        </TableView>
+        <Label layoutX="35.0" layoutY="326.0" styleClass="label-font-size" text="Поиск по меньшей сумме:" />
+        <TextField fx:id="searchField" layoutX="216.0" layoutY="323.0" prefHeight="26.0" prefWidth="134.0" promptText="Введите сумму" />
+        <Button fx:id="btnSearch" layoutX="364.0" layoutY="321.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="26.0" prefWidth="91.0" text="Поиск" />
+        <Button fx:id="showAll" layoutX="473.0" layoutY="321.0" mnemonicParsing="false" onAction="#showAllAction" prefHeight="26.0" prefWidth="196.0" text="Показать все" />
+      <BarChart fx:id="barChartDeposit" layoutX="364.0" layoutY="395.0" prefHeight="350.0" prefWidth="311.0" title="Статистика использования кредитов">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="pieChartDeposit" layoutX="19.0" layoutY="395.0" prefHeight="319.0" prefWidth="328.0" title="Статистика использования кредитов">
+         <effect>
+            <ColorAdjust brightness="0.22" contrast="0.42" />
+         </effect></PieChart>
+    </children>
+</AnchorPane>

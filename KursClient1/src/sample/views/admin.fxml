@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="281.0" prefWidth="353.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AdminController">
+    <children>
+        <Button fx:id="btnShowAllUsers" layoutX="71.0" layoutY="35.0" mnemonicParsing="false" onAction="#showAllUsers" prefHeight="25.0" prefWidth="211.0" text="Просмотр пользователей" />
+        <Button fx:id="btnShowAllHistoryDeposit" layoutX="71.0" layoutY="80.0" mnemonicParsing="false" onAction="#showAllHistoryDeposit" prefHeight="25.0" prefWidth="211.0" text="История кредитов" />
+        <Button fx:id="btnShowAllHistoryTransferMoney" layoutX="71.0" layoutY="128.0" mnemonicParsing="false" onAction="#showAllHistoryTransferMoney" prefHeight="25.0" prefWidth="211.0" text="История денежных переводов" />
+        <Button fx:id="auth" layoutX="63.0" layoutY="208.0" mnemonicParsing="false" onAction="#authAction" prefHeight="25.0" prefWidth="228.0" text="Вернуться на этап авторизации" />
+ </children>
+
+</AnchorPane>

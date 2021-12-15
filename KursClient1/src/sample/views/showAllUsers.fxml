@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="927.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ShowAllUsersController">
+    <children>
+        <Label layoutX="17.0" layoutY="95.0" prefHeight="18.0" prefWidth="90.0" text="Роль:" />
+        <Label layoutX="17.0" layoutY="57.0" prefHeight="18.0" prefWidth="82.0" text="Пароль:" />
+        <Label layoutX="17.0" layoutY="18.0" text="Имя:" />
+        <Label layoutX="17.0" layoutY="131.0" prefHeight="17.0" prefWidth="47.0" text="Деньги:" />
+        <Label layoutX="17.0" layoutY="170.0" prefHeight="18.0" prefWidth="99.0" text="Номер аккаунтаr:" />
+        <TextField fx:id="fieldName" layoutX="117.0" layoutY="15.0" prefHeight="25.0" prefWidth="106.0" promptText="Имя" />
+        <TextField fx:id="fieldPassword" layoutX="117.0" layoutY="54.0" prefHeight="25.0" prefWidth="106.0" promptText="Пароль" />
+        <TextField fx:id="fieldRole" layoutX="117.0" layoutY="92.0" prefHeight="25.0" prefWidth="106.0" promptText="Роль" />
+        <TextField fx:id="fieldMoney" layoutX="117.0" layoutY="128.0" prefHeight="25.0" prefWidth="106.0" promptText="Деньги" />
+        <TextField fx:id="fieldAccountNum" layoutX="117.0" layoutY="167.0" prefHeight="25.0" prefWidth="106.0" promptText="Номер аккаунта" />
+        <Button fx:id="btnAdd" layoutX="25.0" layoutY="222.0" mnemonicParsing="false" onAction="#addRecord" prefHeight="25.0" prefWidth="171.0" text="Добавить запись" />
+        <TableView fx:id="dataTable" layoutX="233.0" layoutY="13.0" prefHeight="242.0" prefWidth="679.0">
+            <columns>
+                <TableColumn fx:id="idColumn" prefWidth="40.0" styleClass="table-column-view" text="id" />
+                <TableColumn fx:id="nameColumn" prefWidth="106.0" styleClass="table-column-view" text="Имя" />
+                <TableColumn fx:id="passwordColumn" prefWidth="102.0" styleClass="table-column-view" text="Пароль" />
+                <TableColumn fx:id="roleColumn" prefWidth="64.60000610351562" styleClass="table-column-view" text="Роль" />
+                <TableColumn fx:id="moneyColumn" prefWidth="99.20001220703125" styleClass="table-column-view" text="Деньги" />
+                <TableColumn fx:id="accountNumColumn" prefWidth="124.0" text="Номер аккаунта" />
+                <TableColumn fx:id="regDateColumn" prefWidth="125.0" styleClass="table-column-view" text="Дата регистрации" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnDelete" layoutX="25.0" layoutY="313.0" mnemonicParsing="false" onAction="#deleteRecord" prefHeight="26.0" prefWidth="171.0" text="Удалить запись" />
+        <Button fx:id="btnEdit" layoutX="25.0" layoutY="268.0" mnemonicParsing="false" onAction="#editRecord" prefHeight="26.0" prefWidth="171.0" text="Редактировать запись" />
+        <TextField fx:id="searchField" layoutX="233.0" layoutY="281.0" prefHeight="25.0" prefWidth="171.0" promptText="Search" />
+        <Button fx:id="searchBtn" layoutX="540.0" layoutY="279.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="132.0" text="Поиск" />
+        <ChoiceBox fx:id="choiceBox" layoutX="418.0" layoutY="281.0" prefHeight="25.0" prefWidth="106.0" />
+        <Button fx:id="btnShowAllRecord" disable="true" layoutX="684.0" layoutY="279.0" mnemonicParsing="false" onAction="#showAllRecord" prefHeight="26.0" prefWidth="225.0" text="Показать все записи" />
+    </children>
+</AnchorPane>

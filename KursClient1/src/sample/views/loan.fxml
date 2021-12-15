@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="351.0" prefWidth="290.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.LoanController">
+    <children>
+        <ComboBox fx:id="comboBoxDeposit" layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="250.0" promptText="Название кредита" styleClass="label-font-size" />
+
+        <Label fx:id="labelForPercentDeposit" layoutX="30" layoutY="70.0" styleClass="label-font-size" text="Процент годовых: " />
+        <Label fx:id="labelPercentDeposit" layoutX="152" layoutY="70.0" styleClass="label-font-size" text="9.2%" />
+
+        <Label fx:id="labelForTermDeposit" layoutX="31.0" layoutY="97.0" styleClass="label-font-size" text="Срок: " />
+        <Label fx:id="labelTermDeposit" layoutX="73.0" layoutY="97.0" styleClass="label-font-size" text="6 месяцев" />
+
+        <Label fx:id="labelForStartDateDeposit" layoutX="30.0" layoutY="125.0" styleClass="label-font-size" text="Дата начала: " />
+        <Label fx:id="labelStartDateDeposit" layoutX="116.0" layoutY="125.0" styleClass="label-font-size" text="03.2020" />
+
+        <Label fx:id="labelForEndDateDeposit" layoutX="30.0" layoutY="155.0" styleClass="label-font-size" text="Дата окончания: " />
+        <Label fx:id="labelEndDateDeposit" layoutX="141.0" layoutY="155.0" styleClass="label-font-size" text="05.2020" />
+
+        <Label fx:id="labelForFieldSumDeposit" layoutX="30.0" layoutY="185.0" styleClass="label-font-size" text="Сумма (мин. 50$): " />
+        <TextField fx:id="fieldSumDeposit" alignment="CENTER" layoutX="150.0" layoutY="178.0" onKeyReleased="#keyEvent" prefWidth="55.0" styleClass="sum-deposit-value" text="0.00" />
+        <Label fx:id="labelForFieldNewSumDeposit" layoutX="30.0" layoutY="218.0" styleClass="label-font-size" text="Сумма по окончанию: " />
+        <Label fx:id="labelNewSumDeposit" layoutX="183.0" layoutY="218.0" prefWidth="70.0" styleClass="label-font-size" text="0.00" />
+
+        <Button fx:id="btnMakeDeposit" alignment="CENTER" layoutX="80.0" layoutY="281.0" mnemonicParsing="false" onAction="#makeDepositAction" text="Оформить кредит" />
+        <CheckBox fx:id="checkSaveReport" layoutX="53.0" layoutY="318.0" mnemonicParsing="false" text="Сохранить отчёт в файл">
+         <font>
+            <Font size="13.0" />
+         </font></CheckBox>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutY="253.0" prefHeight="17.0" prefWidth="290.0" />
+    </children>
+</AnchorPane>

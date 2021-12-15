@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="356.0" prefWidth="526.0" stylesheets="/sample/Style.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.UserController">
+    <children>
+        <Label layoutX="66.0" layoutY="27.0" prefHeight="17.0" prefWidth="178.0" text="Операции с кредитами:">
+        <font>
+            <Font size="14.0" />
+        </font>
+        </Label>
+        <Button fx:id="btnMakeDeposit" layoutX="34.0" layoutY="58.0" mnemonicParsing="false" onAction="#makeDepositAction" prefHeight="25.0" prefWidth="211.0" text="Оформить кредит" />
+        <Button fx:id="btnShowHistoryDeposit" layoutX="34.0" layoutY="94.0" mnemonicParsing="false" onAction="#showHistoryDeposit" prefHeight="25.0" prefWidth="211.0" text="История кредитов" />
+
+        <Label layoutX="300.0" layoutY="27.0" prefHeight="17.0" prefWidth="172.0" styleClass="label-font-size" text="Операции с переводами:" />
+
+        <Button fx:id="btnMoneyTransfer" layoutX="279.0" layoutY="58.0" mnemonicParsing="false" onAction="#moneyTransferAction" prefHeight="25.0" prefWidth="211.0" text="Денежный перевод" />
+        <Button fx:id="btnShowHistoryTransferMoney" layoutX="279.0" layoutY="94.0" mnemonicParsing="false" onAction="#showHistoryTransferMoney" prefHeight="25.0" prefWidth="211.0" text="История денежных переводов" />
+
+        <Label layoutX="240.0" layoutY="165.0" prefHeight="17.0" prefWidth="52.0" styleClass="label-font-size" text="Выход:" />
+
+        <Button fx:id="auth" layoutX="149.0" layoutY="196.0" mnemonicParsing="false" onAction="#authAction" prefHeight="25.0" prefWidth="228.0" text="Вернуться на этап авторизации" />
+
+        <Label fx:id="moneyLabel" layoutX="371.0" layoutY="268.0" prefHeight="26.0" prefWidth="82.0">
+            <font>
+                <Font size="17.0" />
+            </font></Label>
+        <Label layoutX="74.0" layoutY="265.0" onMouseEntered="#showMoney" onMouseExited="#hideMoney" prefHeight="17.0" prefWidth="170.0" text="Показать текущую сумму:" />
+        <Label layoutX="74.0" layoutY="287.0" onMouseEntered="#showMoneyWithDeposit" onMouseExited="#hideMoney" prefHeight="17.0" prefWidth="265.0" text="Показать сумму с учетом текущего кредита:" />
+        <Label fx:id="accountLabel" layoutX="177.0" layoutY="305.0" prefHeight="26.0" prefWidth="112.0" />
+        <Label layoutX="74.0" layoutY="309.0" prefHeight="17.0" prefWidth="265.0" text="Ваш номер счёта: " />
+    </children>
+
+</AnchorPane>
